@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos</title>
+    <link rel="stylesheet" href="./global.css">
+    <script type="text/javascript" src="./aluno.js"></script>
+</head>
+<body>
+    <div id="titulo">
+        <h1>ALUNOS!</h1>
+        <h3>CADASTRO DE ALUNOS:</h3>
+    </div>
+    <section>
+        <div id="cadastro">
+            <form name="cadastro">
+                <label>Nome</label> <br>
+                <input type="text" name="txtNome" placeholder="Nome"><br><br>
+
+                <label>Matrícula</label> <br>
+                <input type="text" name="txtMatricula" placeholder="Matrícula"><br><br>
+
+                <label>Nota 1</label> <br>
+                <input type="number" name="txtN1" placeholder="Nota 1"><br><br>
+
+                <label>Nota 2</label> <br>
+                <input type="number" name="txtN2" placeholder="Nota 2"><br><br>
+
+                <label>Nota 3</label> <br>
+                <input type="number" name="txtN3" placeholder="Nota 3"><br><br>
+
+                <input type="button" value="Adicionar aluno" onclick="cadAluno(txtNome.value, txtMatricula.value, parseFloat(txtN1.value), parseFloat(txtN2.value), parseFloat(txtN3.value))"><br><br>
+
+            </form>
+            <p id="test"></p>
+
+
+        </div>
+
+            <div id="listaAlunos">
+                <table id="tbAlunos">
+                    <thead>
+                        <tr>
+                            <td>Codigo</td>
+                            <td>Nome</td>
+                            <td>Matrícula</td>
+                            <td>Nota 1</td>
+                            <td>Nota 2</td>
+                            <td>Nota 3</td>
+                            <td>Media</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+    </section>
+</body>
+</html>
